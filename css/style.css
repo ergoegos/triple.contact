@@ -1,17 +1,35 @@
-.header {
-    padding: 60px;
-    text-align: center;
-    background: #000000;
-    color: white;
+body {
+  background-color: #000000;
+  color: white;
+}
+header {
+  margin-top: 0%;
+
+  left: 0;
+  padding: 60px;
+  text-align: center;
+  background: #000000;
+    
     font-size: 30px;
   }
 
-  .footer {
-    position: fixed;
+footer {
+    margin-top: 100%;  
+
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+    
+    background-color: #000000;
+    
+    
+ }
+
+ #footer-image {
+  height: 319px;
+  width: 100%;
+
+  background-image:url(../img/city.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
  }
