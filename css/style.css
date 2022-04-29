@@ -1,35 +1,68 @@
-body {
-  background-color: #000000;
-  color: white;
+* {
+  scroll-behavior: smooth;
 }
-header {
-  margin-top: 0%;
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+body {
+  background: black;
+  font-size: 14pt;
+  color: aliceblue;
+  font-family:'FontAwesome'
+}
 
-  left: 0;
-  padding: 60px;
+#aside-container {
+  position: sticky;
+  position: -webkit-sticky;
+  height: 128px;
+  width: 128px;
+}
+
+aside {
+  overflow: auto;
+  
+  width: 24vh;
+  padding: 0px 2vh;
+  margin-left: 8vh;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+
+.hideAStyle {
+  text-decoration: none;
+}
+
+header#banner {
+  position: relative;
+  height: 100vh;
   text-align: center;
-  background: #000000;
-    
-    font-size: 30px;
-  }
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;  
+}
+
+section#post-container {
+  padding: 2vh 10vh 2vh 39vh; 
+}
 
 footer {
-    margin-top: 100%;  
+  margin-top: 100%;
 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    
-    background-color: #000000;
-    
-    
- }
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
- #footer-image {
+  background-color: #000000;
+}
+
+#footer-image {
   height: 319px;
   width: 100%;
 
-  background-image:url(../img/city.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
- }
+  background-image: url(../img/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

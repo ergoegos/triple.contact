@@ -1,33 +1,17 @@
- 
-  .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+.glow {
+  font-size: 16vh;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #cb72ff, 0 0 20px #be4dff;
   }
 
-  .glow:hover {
-    text-shadow: 
-        0 0 20px #fff, 
-        0 0 30px #fff;
+  to {
+    text-shadow: 0 0 20px #b029ff, 0 0 30px #bb45ff;
   }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 
-        0 0 4px #fff; 
-        /*
-        0 0 30px #8a00e6, 
-        0 0 40px #8a00e6, 
-        0 0 50px #8a00e6, 
-        0 0 60px #8a00e6, 
-        0 0 70px #8a00e6;
-        */
-    }
-    
-    to {
-      text-shadow: 
-      0 0 4px #fff, 
-      0 0 8px #fff;
-    }
-  }
+}
