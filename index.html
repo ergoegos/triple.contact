@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/glow.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/subnav.css">
     <link rel="stylesheet" href="css/leftaside.css">
 
     <!-- css -->
@@ -49,15 +50,15 @@
         <nav class="col-s-11 col-8" id="start">
 
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Posts</a>
+
+                <div onclick="banning()"><a href="#" class="active">Posts</a></div>
                 <a href="#news">Works</a>
                 <a href="#contact">Forms</a>
                 <a href="#about">About</a>
 
                 <form action="rearch.php" id="research-container">
-                    <input type="text" id="research-box" drop="OH BABY A TRIPLE">
-                    <input type="submit" hidden/>
-
+                    <input type="text" id="research-box" placeholder="OH BABY IT'S TRIPLE">
+                    <input type="submit" hidden />
                 </form>
 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -70,115 +71,37 @@
         <main class="col-s-11 col-8">
             <!--#####################################################################################-->
             <aside class="col-4 col-s-3">
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
+                <div class="subnav">
+                    <a href=""> oficiales </a> <br>
+                    <a href=""> +recientes </a> <br>
+                    <a href=""> +visitados </a> <br>
+                </div>
+
             </aside>
 
 
             <!--#####################################################################################-->
             <section class="col-8 col-s-9" style="color: whitesmoke;">
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
-                <p>some text</p>
+
+                <article>
+                    <img src="img/footer_BU.jpg" alt="" class="banner" >
+                    <h2>Reglas de la comunidad</h2>
+                    <p>Simplemente geniales</p>
+                </article>
+
+                <article>
+                    <img src="img/cat_glasses.jpg" alt="" class="banner" >
+                    <h2>Colección de gatos, gatitos y gatazos para whatsapp | Ultimate CAT GIF Collection </h2>
+                    <p>Mini paquete en desarrollo, se de las primeras descargas en apoyar este mini proyecto comunitario.</p>
+                </article>
+
+                <article>
+                    <img src="img/dog_glasses.jpg" alt="" class="banner" >
+                    <h2>Colección de perros, perritos y perrazos para whatsapp | Ultimate DOG GIF Collection </h2>
+                    <p>Mini paquete en desarrollo, se de las primeras descargas en apoyar este mini proyecto comunitario.</p>
+                </article>
+
+                
 
             </section>
         </main>
@@ -190,11 +113,14 @@
             <div class="socializer" data-features="64px,circle,opacity,icon-white,pad"
                 data-sites="facebook,twitter,reddit,print,email,rss,whatsapp" data-meta-link="" data-meta-title="">
             </div>
+
         </footer>
 
     </div>
 
 </body>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <script src="js/topnav.js"></script>
 <script src="js/banner.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/js/socializer.min.js"></script>

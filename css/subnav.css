@@ -1,0 +1,26 @@
+.subnav {
+    text-align: center;
+    background-color: #aaa;
+}
+
+
+.subnav a:visited {
+    color: purple;
+}
+
+.subnav a {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: large;
+
+    color: purple;
+
+}
+
+.subnav a:hover {
+    background-color: blueviolet;
+    color: white !important;
+}

@@ -1,0 +1,12 @@
+.social {
+    position: relative;
+}
+
+.social > * {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    align-self: center;
+}
