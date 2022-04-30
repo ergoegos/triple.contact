@@ -25,10 +25,10 @@
 
 */
 
-function scrolling() {
-  // element which needs to be scrolled to
-  var element = document.querySelector("#tonav");
-
-  // scroll to element
-  element.scrollIntoView();
-}
+function banning() {
+    // element which needs to be scrolled to
+    var element = document.querySelector("#start");
+  
+    // scroll to element
+    element.scrollIntoView();
+  }

@@ -1,17 +1,26 @@
 /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+.glow-container {
+  position: relative;
+}
 .glow {
-  font-size: 16vh;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #cb72ff, 0 0 20px #be4dff;
-  }
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 
-  to {
-    text-shadow: 0 0 20px #b029ff, 0 0 30px #bb45ff;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
   }
-}
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #cb72ff, 0 0 20px #be4dff;
+    }
+  
+    to {
+      text-shadow: 0 0 20px #b029ff, 0 0 30px #bb45ff;
+    }
+  }
