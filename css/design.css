@@ -43,7 +43,7 @@ section {
 article {
     margin: 16px;
     padding: 16px;
-    background-color: grey;
+    background-color: #020B15;
     border-color: purple;
     border-style: solid;
     border-width: 2px;
@@ -62,7 +62,7 @@ aside {
     background-color: grey;
 }
 
-footer {
+footer#social {
     position: relative;
     background-image: url("../img/footer.jpg");
     background-position: top;
@@ -76,4 +76,28 @@ footer {
 
     padding-bottom: 256px;
     margin-top: 16vh;
+}
+
+.tags-container {
+    display: flex;
+    margin: 8px;
+    height: fit-content;
+}
+.tags-container a {
+    margin: 8px 8px 0px 8px;
+    padding: 8px;
+
+    border-radius: 16px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    background-color: rgb(99, 98, 98);
+}
+.tags-container a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+#userform > * {
+    display: inline-block;
+    width: 100%;
 }

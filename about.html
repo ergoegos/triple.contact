@@ -52,10 +52,10 @@
 
             <div class="topnav" id="myTopnav">
 
-                <div onclick="banning()"><a href="#" class="active">Posts</a></div>
+                <a href="index.html">Posts</a>
                 <a href="works.html">Works</a>
                 <a href="forms.html">Forms</a>
-                <a href="about.html">About</a>
+                <div onclick="banning()"><a href="#about" class="active">About</a></div>
 
                 <form action="rearch.php" id="research-container">
                     <input type="text" id="research-box" placeholder="OH BABY IT'S TRIPLE">
@@ -77,72 +77,32 @@
                     <a href=""> Settings </a> <br>
                     <a href=""> Chat </a> <br>
                 </div>
-                <form action="banning()" style="border:1px solid #ccc">
-                    <div class="container">
-                        
-    
-
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="mail@mail.com" name="email" required>
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="****************" name="psw" required>
-
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                            Remember me
-                        </label>
-
-                        <p>By creating an account you agree to our <a href="#" style="color:purple; font-weight: bold;">Terms &
-                                Privacy</a>.</p>
-
-                        <div class="clearfix">
-                            <button type="button" class="cancelbtn">Desconectar</button>
-                            <button type="submit" class="signupbtn">Conectar</button>
-                        </div>
-                    </div>
-                </form>
+                
             </aside>
 
 
             <!--#####################################################################################-->
             <section class="col-8 col-s-9" style="color: whitesmoke;">
 
-                <header class="tags-container">
-                    <a href=""> oficiales </a> <br>
-                    <a href=""> +recientes </a> <br>
-                    <a href=""> +visitados </a> <br>
-                </header>
-
                 <article>
                     <img src="img/footer_BU.jpg" alt="" class="banner">
-                    <h2>Reglas de la comunidad</h2>
-                    <p>Simplemente geniales</p>
+                    <h2>Nuestra historia</h2>
+                    <p>Somos un pequeño grupo de amigos que tras reiterados intentos de crear empresa lo ha logrado.
+                    Este sueño empezo en la matrix del mundo que esconden varios videojuegos e internet en general.
+                     </p>
                 </article>
 
-                <article>
-                    <img src="img/cat_glasses.jpg" alt="" class="banner">
-                    <h2>Colección de gatos, gatitos y gatazos para whatsapp | Ultimate CAT GIF Collection </h2>
-                    <p>Mini paquete en desarrollo, se de las primeras descargas en apoyar este mini proyecto
-                        comunitario.</p>
-                </article>
-
-                <article>
-                    <img src="img/dog_glasses.jpg" alt="" class="banner">
-                    <h2>Colección de perros, perritos y perrazos para whatsapp | Ultimate DOG GIF Collection </h2>
-                    <p>Mini paquete en desarrollo, se de las primeras descargas en apoyar este mini proyecto
-                        comunitario.</p>
-                </article>
+                <footer>
 
 
-
+                </footer>
             </section>
         </main>
 
 
 
         <!--#####################################################################################-->
-        <footer class="col-s-12 col-12">
+        <footer id="social" class="col-s-12 col-12">
             <div class="socializer" data-features="64px,circle,opacity,icon-white,pad"
                 data-sites="facebook,twitter,reddit,print,email,rss,whatsapp" data-meta-link="" data-meta-title="">
             </div>
