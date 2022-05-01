@@ -84,14 +84,21 @@ footer#webpage-footer {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 256px;
 
-    display: flex;
+    padding: 0px 64px 512px 64px;
+    margin-top: 128px;
+}
+
+.socializer {
+    display: flex !important;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-
-    padding-bottom: 256px;
-    margin-top: 16vh;
+    align-items: flex-start;
+    
+}
+.socializer > span {
+    padding: 8px !important;
+    
 }
 
 .tags-container {
