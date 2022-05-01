@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     max-width: 100vw;
     margin: 0px;
@@ -15,25 +16,28 @@ div#contenedor {
 
 }
 
-#contenedor > main {
+#contenedor>main {
     height: 100%;
 
     display: flex;
     flex-flow: row wrap-reverse;
 }
+
 header {
     height: 100vh;
 
 }
+
 nav {
-    
+
     max-height: 20vh;
     background-color: blueviolet;
-    
-    position: -webkit-sticky; /* Safari */
+
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 0;
-  
+
 }
 
 section {
@@ -57,12 +61,24 @@ article img.banner {
     object-fit: cover;
 }
 
+div.video-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: 020B15;
+    /* For browsers that do not support gradients */
+    background-image: radial-gradient(black 20%, #020c15 70%,  #020B15 10%);
+    
+}
 
 aside {
     background-color: grey;
 }
 
-footer#social {
+footer#webpage-footer {
     position: relative;
     background-image: url("../img/footer.jpg");
     background-position: top;
@@ -80,9 +96,11 @@ footer#social {
 
 .tags-container {
     display: flex;
+    flex-flow: row wrap;
     margin: 8px;
     height: fit-content;
 }
+
 .tags-container a {
     margin: 8px 8px 0px 8px;
     padding: 8px;
@@ -92,12 +110,77 @@ footer#social {
     color: rgb(206, 206, 206);
     background-color: rgb(99, 98, 98);
 }
+
 .tags-container a:hover {
     background-color: blueviolet;
     color: white;
 }
 
-#userform > * {
+#userform>* {
     display: inline-block;
     width: 100%;
+}
+
+/*!************************************************
+      * https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+      * Name: How TO - Responsive Image Grid
+      **************************************************/
+.rrow {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* Create four equal columns that sits next to each other */
+.ccolumn {
+
+    flex: 33%;
+    max-width: 33%;
+    margin-right: 0.3%;
+    align-items: stretch;
+}
+
+.ccolumn img {
+    height: 99%;
+    padding-top: 0.9%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .ccolumn {
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .ccolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*!************************************************
+      * https://www.w3schools.com/howto/howto_css_image_text.asp
+      * Name: How TO - Position Text Over an Image
+      **************************************************/
+/* Container holding the image and the text */
+.ccontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2% 4%;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
