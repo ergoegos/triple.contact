@@ -59,9 +59,9 @@
             <div class="topnav" id="myTopnav">
 
                 <!-- Navegation options menu -->
-                <div onclick="banning()"><a href="#" class="active">Posts</a></div>
+                <div><a href="index.html">Posts</a></div>
                 <a href="works.html">Works</a>
-                <a href="forms.html">Forms</a>
+                <a href="forms.html" class="active">Forms</a>
                 <a href="about.html">About</a>
 
                 <!-- Research container -->
@@ -104,20 +104,21 @@
                     <form action="" class="form" method="post" autocomplete="on" id="userform"
                         oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 
-                        <div class="input-container">
+                        <div class="input-container col-6 col-s-6"  style="float: none;">
                             <input class="input" type="text" id="fname" name="fname" placeholder=" ">
                             <div class="cut cut-short"></div>
-                            <label class="placeholder" for="fname">Nombre:</label>
+                            <label class="placeholder" for="fname">Nombre</label>
+                        </div>
+
+                        <div class="input-container col-6 col-s-6" style="float: none;">
+                            <input class="input" type="text" id="lname" name="lname" placeholder=" ">
+                            <div class="cut cut-short"></div>
+                            <label class="placeholder" for="lname">Apellidos</label>
                         </div>
 
                         <div class="input-container">
-                            <input class="input" type="text" id="lname" name="lname" placeholder=" ">
-                            <div class="cut cut-short"></div>
-                            <label class="placeholder" for="lname">Apellidos:</label>
-                        </div>
-
-                        <div class="input-container ic3">
                             <select class="input" id="country" name="country" aria-placeholder=" ">
+                                <option value=""></option>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -370,8 +371,8 @@
                         </div>
 
 
-                        <div class="input-container ic4">
-                            <select class="input" id="project" name="project">
+                        <div class="input-container">
+                            <select class="input" id="project" name="project" >
                                 <option value=""></option>
                                 <option value="CalaMMO">CalaMMO</option>
                                 <option value="WKFigher">WKFigher</option>
@@ -380,7 +381,9 @@
                             <label class="placeholder" for="project">Proyecto</label>
                         </div>
 
-                        <div class="input-container ic5">
+                        <div class="input-container">
+
+                            
                             <datalist class="input" id="contact">
                                 <option value="Jaimito">
                                 <option value="Pepito">
@@ -388,52 +391,75 @@
                                 <option value="Alfonso">
                                 <option value="Tony">
                             </datalist>
+                            
+                            <input class="input" class="input" list="contact">
                             <div class="cut cut-short"></div>
                             <label class="placeholder" for="contact">Contact</label>
-                            <input class="input" class="input" list="contact">
 
                         </div>
 
-                        <div class="input-container ic5">
-                            <textarea class="input" name="message" rows="10" cols="30" placeholder="Hola buenos dias..."></textarea>
+                        <div class="input-container">
+                            <textarea class="input" name="message" rows="10" cols="30" placeholder="Mensaje" >
+                                
+                            </textarea>
                         </div>
 
 
-                        <div class="input-container ic6">
-                            <label class="placeholder" for="a">aa</label>
-                            <input class="input" class="input" type="range" id="a" name="a" value="50">
-                            <label class="placeholder" for="b">bb</label>
-                            <input class="input" class="input" type="number" id="b" name="b" value="50">
+                 
 
-                            <output name="x" for="a b"></output>
+                        <div class="input-container">
+                            <input class="input" class="input" type="number" id="b" name="b" value="">    
+                            <div class="cut cut-short"></div>
+                            <label class="placeholder" for="b">Puntos</label>
                         </div>
 
-                        <div class="input-container ic6">
-                            <input class="input" class="input" type="submit">
+                        <div class="input-container">
+                                
+                            <input type="range" min="1" max="100" value="50" class="slider" id="a">   
+                  
                         </div>
 
+                        <div class="input-container">
+                            
+                            <output id="output" class="input col-10 col-s-10" name="x" for="a*b"></output>
+                            <div class="cut cut-short"></div>
+                            <label class="placeholder" for="x">Suma de puntos</label>
+
+                        </div>
+
+                        <div class="input-container" style="display: flex; flex-flow: row wrap; align-items: baseline;">
+                            <p style="font-size:large;">Terminos y condicones</p>
+                            <input class="col-2 col-s-2" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" size="64x64">
+                        </div>
+                        
+                        <div class="input-container">
+                            <input class="input" type="submit" id="submit">
+                        </div>
+
+                        
                     </form>
 
+                    <footer>
+                        <details class="input">
+                            <summary style="padding: 16px;">Más información sobre terminos y condicones ...</summary>
+                            <h2>Terminos y condiciones</h2>
+                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions,
+                                international pavilions, award-winning fireworks and seasonal special events.</p>
+    
+                            <h3>Parte contratante de la 2ª parte</h3>
+                            <p>Next his only boy meet the fat rose when. Do repair at we misery wanted remove remain income.
+                                Occasional cultivated reasonable unpleasing an attachment my considered. Having ask and
+                                coming object seemed put did admire figure. Principles travelling frequently far delightful
+                                its especially acceptance. Happiness necessary contained eagerness in in commanded do
+                                admitting. Favourable continuing difficulty had her solicitude far. Nor doubt off widow all
+                                death aware offer. We will up able in both do sing.</p>
+                        </details>
+    
+    
+                    </footer>
                 </article>
 
-                <footer class="banner">
-                    <details>
-                        <summary>Más información...</summary>
-                        <h2>Terminos y condiciones</h2>
-                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions,
-                            international pavilions, award-winning fireworks and seasonal special events.</p>
-
-                        <h3>Parte contratante de la 2ª parte</h3>
-                        <p>Next his only boy meet the fat rose when. Do repair at we misery wanted remove remain income.
-                            Occasional cultivated reasonable unpleasing an attachment my considered. Having ask and
-                            coming object seemed put did admire figure. Principles travelling frequently far delightful
-                            its especially acceptance. Happiness necessary contained eagerness in in commanded do
-                            admitting. Favourable continuing difficulty had her solicitude far. Nor doubt off widow all
-                            death aware offer. We will up able in both do sing.</p>
-                    </details>
-
-
-                </footer>
+               
             </section>
         </main>
 
