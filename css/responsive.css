@@ -75,6 +75,29 @@ and one way to do it is to add clear to a replaced ::after pseudo-element on it.
     .col-12 {width: 100%;}
 }   /* desktops */
 
+/* Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho. */
+@media only screen and (min-width: 900px) and (max-width: 1300px)  { 
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #contenedor {
+        width: 960px ;
+    
+    } 
+    #webpage-footer {
+        background-image: none !important;
+        
+    }
+    #contenedor footer {
+        margin-top: 24px !important;
+    }
+
+}
+
 /*
 @media screen and (max-width: 320px) {
     

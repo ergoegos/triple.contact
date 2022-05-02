@@ -3,22 +3,21 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="keywords" content="triple, contact">
-    <meta name="description" content="There's triple contact page">
-    <meta name="author" content="Ricard Penin Honrubia">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv="refresh" content="300">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="triple, contact, triple contact" />
+    <meta name="description" content="There's triple contact page" />
+    <meta name="author" content="Ricard Penin Honrubia" />
+    <meta name="copyright" content="Ricard Penin Honrubia" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv="refresh" content="300" />
 
-    <!-- css copied -->
-    <link rel="stylesheet" href="css/signup.css">
+    <!-- css  -->
     <link rel="stylesheet" href="css/glow.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/topnav.css">
     <link rel="stylesheet" href="css/subnav.css">
-    <link rel="stylesheet" href="css/leftaside.css">
-
-    <!-- css -->
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/design.css">
 
@@ -26,73 +25,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
-    <!-- icon and title -->
-    <link rel="icon" href="img/among_us_player_red_icon.png">
-    <title>Triple Contact</title>
+
+    <!-- Triple Contact icon and title -->
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon/16.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="24x24" href="favicon/24.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon/32.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="48x48" href="favicon/48.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="favicon/64.ico">
+    <title>Lenguaje Generalizado de Marcas Standarizado | Triple Contact</title>
 
 </head>
 
+<!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
     <div id="contenedor" class="row">
 
-        <!--#####################################################################################-->
+        <!-- Triple Contact welcome banner -->
         <header class="glow-container col-s-12 col-12" onclick="banning()">
             <h1 class="glow">TRIPLE.</br>CONTACT</h1>
         </header>
 
 
-        <!--#####################################################################################-->
-        <nav class="col-s-11 col-8" id="start">
+        <!-- Scroller for sticky element -->
+        <nav class="col-s-11 col-10" id="start">
 
+            <!-- Sticky element -->
             <div class="topnav" id="myTopnav">
 
-                <a href="index.html">Posts</a>
+                <!-- Navegation options menu -->
+                <div onclick="banning()"><a href="#" class="active">Posts</a></div>
                 <a href="works.html">Works</a>
                 <a href="forms.html">Forms</a>
-                <div onclick="banning()"><a href="#about" class="active">About</a></div>
+                <a href="about.html">About</a>
 
-                <form action="rearch.php" id="research-container">
-                    <input type="text" id="research-box" placeholder="OH BABY IT'S TRIPLE">
+                <!-- Research container -->
+                <!-- objective: https://www.developerdrive.com/add-google-forms-static-site/ -->
+                <form action="research.php" id="research-container">
+                    <input type="text" id="research" placeholder="Oh BABY thats TRIPLE">
                     <input type="submit" hidden />
                 </form>
 
+                <!-- Responsive menu button -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
 
+            </div>
         </nav>
 
 
-        <!--#####################################################################################-->
-        <main class="col-s-11 col-8">
-            <!--#####################################################################################-->
+
+        <main class="col-s-11 col-10">
+
             <aside class="col-12 col-s-12">
                 <div class="subnav">
-                    <a href=""> Sign in/up </a> <br>
-                    <a href=""> Settings </a> <br>
-                    <a href=""> Chat </a> <br>
+                    <a href=""> Ajustar </a> <br>
+                    <a href=""> Conectar </a> <br>
+                    <a href=""> Comunicar </a> <br>
                 </div>
-
             </aside>
 
 
-            <!--#####################################################################################-->
             <section class="col-12 col-s-12" style="color: whitesmoke;">
 
                 <article>
-                    <div class="video-container">
-                        <iframe width="560" height="315" class="banner" src="https://www.youtube.com/embed/OsIVY1x4Uac"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                    <div class="youtube">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OsIVY1x4Uac"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
                         </iframe>
                     </div>
-                   
+
                     <h2>Nuestra historia</h2>
                     <p>Somos un pequeño grupo de amigos que tras reiterados intentos de crear empresa lo ha logrado.
                         Este sueño empezo en la matrix del mundo que esconden varios videojuegos e internet en general.

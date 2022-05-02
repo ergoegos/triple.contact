@@ -3,172 +3,177 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="keywords" content="triple, contact">
-    <meta name="description" content="There's triple contact page">
-    <meta name="author" content="Ricard Penin Honrubia">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv="refresh" content="300">
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="triple, contact, triple contact" />
+  <meta name="description" content="There's triple contact page" />
+  <meta name="author" content="Ricard Penin Honrubia" />
+  <meta name="copyright" content="Ricard Penin Honrubia" />
+  <meta name="robots" content="index,follow" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv="refresh" content="300" />
 
-    <!-- css copied -->
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="stylesheet" href="css/glow.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topnav.css">
-    <link rel="stylesheet" href="css/subnav.css">
-    <link rel="stylesheet" href="css/leftaside.css">
+  <!-- css  -->
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/subnav.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/design.css">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/design.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
 
-    <!-- icons-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
-    <!-- icon and title -->
-    <link rel="icon" href="img/among_us_player_red_icon.png">
-    <title>Triple Contact</title>
+  <!-- Triple Contact icon and title -->
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon/16.ico">
+  <link rel="shortcut icon" type="image/x-icon" sizes="24x24" href="favicon/24.ico">
+  <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon/32.ico">
+  <link rel="shortcut icon" type="image/x-icon" sizes="48x48" href="favicon/48.ico">
+  <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="favicon/64.ico">
+  <title>Lenguaje Generalizado de Marcas Standarizado | Triple Contact</title>
 
 </head>
 
+<!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
-    <div id="contenedor" class="row">
+  <div id="contenedor" class="row">
 
-        <!--#####################################################################################-->
-        <header class="glow-container col-s-12 col-12" onclick="banning()">
-            <h1 class="glow">TRIPLE.</br>CONTACT</h1>
+    <!-- Triple Contact welcome banner -->
+    <header class="glow-container col-s-12 col-12" onclick="banning()">
+      <h1 class="glow">TRIPLE.</br>CONTACT</h1>
+    </header>
+
+
+    <!-- Scroller for sticky element -->
+    <nav class="col-s-11 col-10" id="start">
+
+      <!-- Sticky element -->
+      <div class="topnav" id="myTopnav">
+
+        <!-- Navegation options menu -->
+        <div onclick="banning()"><a href="#" class="active">Posts</a></div>
+        <a href="works.html">Works</a>
+        <a href="forms.html">Forms</a>
+        <a href="about.html">About</a>
+
+        <!-- Research container -->
+        <!-- objective: https://www.developerdrive.com/add-google-forms-static-site/ -->
+        <form action="research.php" id="research-container">
+          <input type="text" id="research" placeholder="Oh BABY thats TRIPLE">
+          <input type="submit" hidden />
+        </form>
+
+        <!-- Responsive menu button -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+      </div>
+    </nav>
+
+    <main class="col-s-11 col-10">
+
+      <aside class="col-12 col-s-12">
+        <div class="subnav">
+          <a href=""> Ajustar </a> <br>
+          <a href=""> Conectar </a> <br>
+          <a href=""> Comunicar </a> <br>
+        </div>
+      </aside>
+
+
+      <!--#####################################################################################-->
+      <section class="col-12 col-s-12" >
+
+        <header class="tags-container">
+          <a href=""> oficiales </a> <br>
+          <a href=""> +recientes </a> <br>
+          <a href=""> +visitados </a> <br>
         </header>
 
+        <article style="position: relative; height: 2000px;">
 
-        <!--#####################################################################################-->
-        <nav class="col-s-11 col-8" id="start">
+          <div class="rrow" >
 
-            <div class="topnav" id="myTopnav">
-
-                <a href="index.html">Posts</a>
-                <div onclick="banning()"><a href="works.html" class="active">Works</a></div>
-                <a href="forms.html">Forms</a>
-                <a href="about.html">About</a>
-
-                <form action="rearch.php" id="research-container">
-                    <input type="text" id="research-box" placeholder="OH BABY IT'S TRIPLE">
-                    <input type="submit" hidden />
-                </form>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <div class="ccolumn">
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2019/09/06/19/38/tobacco-4457185_960_720.jpg" />
+                <div class="bottom-left">Botánica</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/03/29/12/54/cigarettes-4980591_960_720.jpg" />
+                <div class="bottom-left">Industria</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2017/02/13/08/54/brain-2062057_960_720.jpg" />
+                <div class="bottom-left">Psicologia</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2015/07/22/10/23/nicotine-855124_960_720.png" />
+                <div class="bottom-left">Química</div>
+              </div>
             </div>
 
-        </nav>
-
-
-        <!--#####################################################################################-->
-        <main class="col-s-11 col-8" >
-            <!--#####################################################################################-->
-            <aside class="col-12 col-s-12">
-                <div class="subnav">
-                    <a href=""> Sign in/up </a> <br>
-                    <a href=""> Settings </a> <br>
-                    <a href=""> Chat </a> <br>
-                </div>
-            
-            </aside>
-
-
-            <!--#####################################################################################-->
-            <section class="col-12 col-s-12" style="color: whitesmoke;  z-index: -1;">
-
-                <header class="tags-container">
-                    <a href=""> oficiales </a> <br>
-                    <a href=""> +recientes </a> <br>
-                    <a href=""> +visitados </a> <br>
-                </header>
-
-                <article style="position: relative; height: 1000px;">
-
-                    <div class="rrow">
-  
-                        <div class="ccolumn">    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2019/09/06/19/38/tobacco-4457185_960_720.jpg" />
-                            <div class="bottom-left">Botánica</div>
-                          </div>    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/03/29/12/54/cigarettes-4980591_960_720.jpg" />
-                            <div class="bottom-left">Industria</div>
-                          </div>    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2017/02/13/08/54/brain-2062057_960_720.jpg" />
-                            <div class="bottom-left">Psicologia</div>
-                          </div>    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2015/07/22/10/23/nicotine-855124_960_720.png" />
-                            <div class="bottom-left">Química</div>
-                          </div>   
-                        </div>
-                        
-                        <div class="ccolumn">    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/01/07/23/45/health-4748928_960_720.png" />
-                            <div class="bottom-left">Cardiologia</div>
-                          </div>    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/09/21/23/26/lungs-5591437_960_720.jpg" />
-                            <div class="bottom-left">Neumologia</div>
-                          </div>    
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2012/10/26/00/26/computer-tomography-62942_960_720.jpg" />
-                            <div class="bottom-left">Oncología</div>
-                          </div>
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2018/08/17/20/01/eyes-3613710_960_720.jpg" />
-                            <div class="bottom-left">Oftolmalogía</div>
-                          </div>
-                        </div>
-                        
-                        <div class="ccolumn">
-                             <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/06/15/15/37/box-5302311_960_720.jpg" />
-                            <div class="bottom-left">Mercadotecnia</div>
-                          </div>
-                                 <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/08/19/02/41/cigarette-5499783_960_720.jpg" />
-                            <div class="bottom-left">Ciencias ambientales</div>
-                          </div>
-                              <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/04/16/16/49/tobacco-5051497_960_720.jpg" />
-                            <div class="bottom-left">Bromatologia</div>
-                          </div>
-                          <div class="ccontainer">
-                            <img src="https://cdn.pixabay.com/photo/2020/04/05/12/17/rap-5005895_960_720.jpg" />
-                            <div class="bottom-left">Sociologia</div>
-                          </div>
-                        </div>
-                      </div>    
-
-                </article>
-
-
-            </section>
-        </main>
-
-
-
-        <!--#####################################################################################-->
-        <footer class="col-s-12 col-12" id="webpage-footer">
-            <div class="socializer" data-features="64px,circle,opacity,icon-white,pad"
-                data-sites="facebook,twitter,reddit,print,email,rss,whatsapp" data-meta-link="" data-meta-title="">
+            <div class="ccolumn">
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/01/07/23/45/health-4748928_960_720.png" />
+                <div class="bottom-left">Cardiologia</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/09/21/23/26/lungs-5591437_960_720.jpg" />
+                <div class="bottom-left">Neumologia</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2012/10/26/00/26/computer-tomography-62942_960_720.jpg" />
+                <div class="bottom-left">Oncología</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2018/08/17/20/01/eyes-3613710_960_720.jpg" />
+                <div class="bottom-left">Oftolmalogía</div>
+              </div>
             </div>
 
-        </footer>
+            <div class="ccolumn">
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/06/15/15/37/box-5302311_960_720.jpg" />
+                <div class="bottom-left">Mercadotecnia</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/08/19/02/41/cigarette-5499783_960_720.jpg" />
+                <div class="bottom-left">Ciencias ambientales</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/04/16/16/49/tobacco-5051497_960_720.jpg" />
+                <div class="bottom-left">Bromatologia</div>
+              </div>
+              <div class="ccontainer">
+                <img src="https://cdn.pixabay.com/photo/2020/04/05/12/17/rap-5005895_960_720.jpg" />
+                <div class="bottom-left">Sociologia</div>
+              </div>
+            </div>
+          </div>
 
-    </div>
+        </article>
+
+
+      </section>
+    </main>
+
+
+    <footer class="col-s-12 col-12" id="webpage-footer">
+      <div class="socializer" data-features="64px,circle,opacity,icon-white,pad"
+        data-sites="facebook,twitter,reddit,print,email,rss,whatsapp" data-meta-link="" data-meta-title="">
+      </div>
+
+    </footer>
+
+  </div>
 
 </body>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -177,9 +182,9 @@
 <script src="js/banner.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/js/socializer.min.js"></script>
 <script>
-    (function () {
-        socializer('.socializer');
-    }());
+  (function () {
+    socializer('.socializer');
+  }());
 </script>
 
 </html>

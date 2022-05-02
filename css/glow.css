@@ -1,6 +1,7 @@
 /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 .glow-container {
   position: relative;
+  height: 100vh;
 }
 .glow {
 
